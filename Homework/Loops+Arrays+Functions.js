@@ -87,4 +87,3 @@ for (const car of printElements) {
   if (car === "Tesla") continue;
   console.log(car);
 }
-ს;
