@@ -134,3 +134,39 @@ let findsThird = execution.indexOf(":", findsSecond + 1);
 console.log(execution.slice(findsFirst + 1, findsSecond));
 console.log(execution.slice(findsSecond + 1, findsThird));
 console.log(execution.slice(findsThird + 1));
+
+let tradeMassage = "  buy:AAPL:150  ";
+let findsFirst = tradeMassage.indexOf(":");
+let findsSecond = tradeMassage.indexOf(":", findsFirst + 1);
+let cleanStrin = tradeMassage.trim().toUpperCase();
+console.log(tradeMassage.trim().toUpperCase());
+console.log(tradeMassage.slice(findsFirst + 1, findsSecond));
+console.log(tradeMassage.slice(findsSecond + 1));
+console.log(cleanStrin.startsWith("BUY"));
+
+let execution = "SELL:AMD:120:FILLED";
+let findsFirst = execution.indexOf(":");
+let findsSecond = execution.indexOf(":", findsFirst + 1);
+let findsThird = execution.indexOf(":", findsSecond + 1);
+console.log(execution.slice(findsFirst + 1, findsSecond));
+console.log(execution.slice(findsSecond + 1, findsThird));
+console.log(execution.slice(findsThird + 1));
+
+let tradeStatus = "  buy|NVDA|250|pending  ";
+let removes = tradeStatus.trim().toUpperCase().replace("PENDING", "FILLED");
+let findsFirst = removes.indexOf("|");
+let findsSecond = removes.indexOf("|", findsFirst + 1);
+let findsThird = removes.indexOf("|", findsSecond + 1);
+console.log(removes.slice(findsFirst + 1, findsSecond));
+console.log(removes.slice(findsSecond + 1, findsThird));
+console.log(removes.slice(findsThird + 1));
+
+let orderData = "   sell|AAPL|400|rejected   ";
+let cleanString = orderData
+  .trim()
+  .toUpperCase()
+  .replace("REJECTED", "ACCEPTED");
+let splitText = cleanString.split("|");
+console.log(
+  `Symbol: ${splitText[1]}, Quantity: ${splitText[2]}, Status: ${splitText[3]}`,
+);
