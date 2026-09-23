@@ -214,12 +214,115 @@
 // console.log(calculator.add(5, 3));
 // console.log(calculator.multiply(3, 4));
 
-const car = {
-  brand: "Tesla",
-  speed: 120,
-  color: "White",
+// const car = {
+//   brand: "Tesla",
+//   speed: 120,
+//   color: "White",
+// };
+
+// console.log(Object.keys(car));
+// console.log(Object.values(car));
+// console.log(Object.entries(car));
+
+// const person = {
+//   name: "Ana",
+//   age: 22,
+//   course: "JavaScript",
+// };
+// console.log(person.name);
+// console.log(person["course"]);
+// person.city = "Tbilisi";
+// person.age = 23;
+// delete person.course;
+// console.log(person);
+
+// const person = {
+//   name: "Ana",
+//   age: 22,
+// };
+// function getName(person) {
+//   console.log(person["name"]);
+// }
+// getName(person);
+
+// const person = {
+//   name: "Ana",
+//   age: 22,
+// };
+// function changeAge(person, newAge) {
+//   person.age = newAge;
+//   return person;
+// }
+// changeAge(person, 25);
+// console.log(person["age"]);
+
+// const person = {
+//   name: "Ana",
+//   age: 22,
+// };
+// function addCity(person, city) {
+//   person.city = city;
+//   return person;
+// }
+// addCity(person, "NEW YORK");
+// console.log(person);
+
+// const student = {
+//   name: "Anna",
+//   age: 20,
+//   course: "JavaScript",
+// };
+// function removeCourse(student) {
+//   delete student.course;
+//   return student;
+// }
+// removeCourse(student);
+// console.log(student);
+
+// const user = {
+//   name: "alex",
+//   age: 30,
+// };
+// function hasProperty(user, key) {
+//   return key in user;
+// }
+// console.log(hasProperty(user, "name"));
+// console.log(hasProperty(user, "city"));
+
+// const person = {
+//   name: "Alex",
+//   age: 30,
+//   country: "USA",
+// };
+
+// function printValues(person) {
+//   for (let key in person) {
+//     console.log(person[key]);
+//   }
+// }
+// printValues(person);
+
+// let person = {
+//   name: "Alex",
+//   age: 25,
+//   country: "USA",
+// };
+// function keyValue(person) {
+//   for (let key in person) {
+//     console.log(key + " : " + person[key]);
+//   }
+// }
+// keyValue(person);
+// console.log(person);
+
+const person = {
+  name: "Alex",
+  age: 25,
+  country: "USA",
 };
 
-console.log(Object.keys(car));
-console.log(Object.values(car));
-console.log(Object.entries(car));
+function countProperties(person) {
+  // შენი კოდი
+}
+
+console.log(countProperties(person));
